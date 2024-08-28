@@ -3155,11 +3155,11 @@ input, select, textarea {
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
+			border-color: #CF9707;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #CF9707;
 		}
 
 		.spotlight.inactive .content {
@@ -3458,6 +3458,8 @@ input, select, textarea {
 		background: transparent;
 		box-shadow: none;
 		position: absolute;
+		margin: 1.5rem 0;
+	
 	}
 
 /* Banner */
