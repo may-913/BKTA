@@ -675,7 +675,11 @@ input, select, textarea {
 }
 
 
+/* workout text */
 
+#workout {
+	margin: 0 10rem;
+}
 
 /* Container */
 
