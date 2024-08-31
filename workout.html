@@ -12,7 +12,39 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
+	<!-- password script -->
+	<script>
+		// Display the modal on page load
+		window.onload = function() {
+			document.getElementById('passwordModal').style.display = 'flex';
+		};
+	
+		// Function to check the entered password
+		function checkPassword() {
+			const password = '123'; // Set your desired password here
+			const userInput = document.getElementById('passwordInput').value;
+	
+			if (userInput === password) {
+				document.getElementById('passwordModal').style.display = 'none'; // Hide modal if password is correct
+			} else {
+				document.getElementById('error-message').style.display = 'block'; // Show error message if incorrect
+			}
+		}
+	</script>
+
 	<body class="is-preload landing">
+		<!-- Password Modal -->
+		<div id="passwordModal" class="modal">
+			<div class="modal-content">
+				<h3>Enter Key to Access</h3>
+				<input type="password" id="passwordInput" placeholder="Enter key" />
+				<button onclick="checkPassword()">Submit</button>
+				<p id="error-message" style="color: red; display: none;">Incorrect key. Try again.</p>
+			</div>
+		</div>
+
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -102,6 +134,9 @@
 				</footer>
 
 		</div>
+
+	
+		
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
