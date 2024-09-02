@@ -642,6 +642,13 @@ input, select, textarea {
 
 	}
 
+
+/* button border */
+#workoutbutton{
+	border: 1px solid #ffb700;
+}
+
+
 /* Gallery styles */
 #custom-gallery {
     padding: 40px 20px;
@@ -2924,7 +2931,10 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Button */
+/* Button Styles:: */
+
+
+
 
 	input[type="submit"],
 	input[type="reset"],
@@ -2999,12 +3009,12 @@ input, select, textarea {
 		.button.large {
 			font-size: 1.35em;
 		}
-
+/* not sure if this is needed w/o the button on the right of the nav*/
 		input[type="submit"].primary,
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #CF9707;
+			/* background-color: #CF9707; */
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -3336,7 +3346,7 @@ input, select, textarea {
 			.wrapper.style2 .button:active {
 				background-color: rgba(255, 255, 255, 0.25) !important;
 			}
-
+/* not sure if this is needed w/o the button on the right of the nav*/
 			.wrapper.style2 input[type="submit"].primary,
 			.wrapper.style2 input[type="reset"].primary,
 			.wrapper.style2 input[type="button"].primary,
@@ -3479,6 +3489,13 @@ input, select, textarea {
 		padding-top: 3.5em;
 	}
 
+
+	li.active {
+		/* Styles for <a> elements with class 'active' */
+		color: #CF9707; /* Example: change the text color */
+	}
+	
+
 	#header {
 		background: rgba(39, 40, 51, 0.965);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
@@ -3544,6 +3561,8 @@ input, select, textarea {
 						display: none;
 					}
 
+
+					
 	body.landing #page-wrapper {
 		padding-top: 0;
 	}
