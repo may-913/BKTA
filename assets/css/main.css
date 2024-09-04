@@ -122,7 +122,7 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/* border-bottom: dotted 1px; */
 		color: #CF9707;
 		text-decoration: none;
 	}
@@ -3497,70 +3497,54 @@ input, select, textarea {
 	
 
 	#header {
+		display: flex; /* Enable Flexbox */
+		align-items: center; /* Vertically center items */
+		justify-content: space-between; /* Space between logo and nav */
 		background: rgba(39, 40, 51, 0.965);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
-		left: 0;
-		line-height: 3.5em;
+		padding: 0 1em; /* Add some padding if needed */
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 100;
 	}
-
-		#header h1 {
-			height: inherit;
-			left: 1.25em;
-			line-height: inherit;
-			margin: 0;
-			position: absolute;
-			top: 0;
-		}
-
-		#header nav {
-			position: absolute;
-			right: 1em;
-			top: 0;
-		}
-
-			#header nav ul {
-				margin: 0;
-			}
-
-				#header nav ul li {
-					display: inline-block;
-					margin-left: 1em;
-				}
-
-					#header nav ul li a, #header nav ul li span {
-						border: 0;
-						color: inherit;
-						display: inline-block;
-						height: inherit;
-						line-height: inherit;
-						outline: 0;
-						font-weight: 200;
-					}
-
-						#header nav ul li a.button, #header nav ul li span.button {
-							height: 2em;
-							line-height: 2em;
-							padding: 0 1.25em;
-						}
-
-						#header nav ul li a:not(.button):before, #header nav ul li span:not(.button):before {
-							margin-right: 0.5em;
-						}
-
-					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #CF9707;
-					}
-
-					#header nav ul li > ul {
-						display: none;
-					}
-
+	
+	#logo {
+		height: 5rem; /* rAdjust the logo size */
+		width: auto; /* Keep the aspect ratio */
+		display: block; /* Ensures no extra space around the image */
+	}
+	
+	#header nav {
+		display: flex; /* Keeps nav items in line */
+		align-items: center; /* Vertically centers nav items */
+		position: static; /* Change from absolute to allow Flexbox alignment */
+	}
+	
+	#header nav ul {
+		display: flex; /* Aligns nav items horizontally */
+		margin: 0;
+		padding: 0;
+		list-style: none; /* Removes bullets */
+	}
+	
+	#header nav ul li {
+		margin-left: 1em;
+	}
+	
+	#header nav ul li a, #header nav ul li span {
+		color: inherit;
+		display: inline-block;
+		font-weight: 200;
+		text-decoration: none; /* Removes underline */
+	}
+	
+	#header nav ul li.active > a, #header nav ul li.active > span {
+		color: #CF9707; /* Style for the active link */
+	}
+	
 
 					
 	body.landing #page-wrapper {
