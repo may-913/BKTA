@@ -4196,6 +4196,11 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
+
+			#workout {
+				margin: 5rem;
+			}
+
 		/* Footer */
 
 			#footer {
@@ -4265,6 +4270,10 @@ input, select, textarea {
 						margin: 0;
 						padding: 0;
 					}
+
+			#workout, #download {
+				margin: 2rem;
+			}
 
 	}
 			#footer {
