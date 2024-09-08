@@ -4201,6 +4201,12 @@ input, select, textarea {
 				margin: 5rem;
 			}
 
+			#download {
+				margin: 0 5rem;
+				width: 70%;
+			}
+
+
 		/* Footer */
 
 			#footer {
@@ -4271,8 +4277,13 @@ input, select, textarea {
 						padding: 0;
 					}
 
-			#workout, #download {
+			#workout {
 				margin: 2rem;
+			}
+
+			#download {
+				margin: 2rem;
+				width: 70%;
 			}
 
 	}
