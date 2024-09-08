@@ -3548,7 +3548,7 @@ input, select, textarea {
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
-		padding: 0 1em; /* Add some padding if needed */
+		padding:0 3rem; /* Add some padding if needed */
 		position: fixed;
 		top: 0;
 		width: 100%;
