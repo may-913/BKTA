@@ -4113,9 +4113,27 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
+						background: #CF9707; /* Background color */
+						content: ''; /* No content needed */
+						display: block;
+						height: 44px;
+						width: 54px;
+						position: absolute;
+						top: 0;
+						left: 0;
+						background-image: url('images/menu.png'); /* Image as background */
+						background-position: center; /* Center the image */
+						background-repeat: no-repeat; /* Prevent repeating */
+						background-size: 24px 24px; /* Control image size */
+						text-align: center; /* Align text if needed */
+					}
+					
+
+
+					/* #titleBar .toggle:before {
 						background: #CF9707;
 						color: rgba(255, 255, 255, 0.5);
-						content: '\f0c9';
+						content: url('images/menu.png');
 						display: block;
 						font-size: 18px;
 						height: 44px;
@@ -4124,8 +4142,7 @@ input, select, textarea {
 						position: absolute;
 						text-align: center;
 						top: 0;
-						width: 54px;
-					}
+						width: 54px; */
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
