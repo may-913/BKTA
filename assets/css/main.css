@@ -2624,6 +2624,14 @@ input, select, textarea {
 					text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 				}
 
+	.iconsection {
+		width: 70px; /* Adjust width */
+		height: 70px; /* Adjust height */
+		display: block; /* Ensures the image behaves like a block element */
+		opacity: 30%;
+		margin: 25px 25px;
+	}
+
 /* Image */
 
 	.image {
@@ -2864,7 +2872,6 @@ input, select, textarea {
 						ul.actions:not(.fixed) li .button.icon:before {
 							margin-left: -0.5em;
 						}
-
 		}
 
 /* Table */
@@ -3753,6 +3760,13 @@ input, select, textarea {
 				font-size: 13pt;
 			}
 
+			.iconsection {
+				width: 60%;
+				height: 60%;
+				margin: 20px 20px;
+			}
+
+
 	}
 
 /* Large */
@@ -3802,6 +3816,12 @@ input, select, textarea {
 
 			#footer {
 				padding: 4.5em 0;
+			}
+
+			.iconsection {
+				width: 60%;
+				height: 60%;
+				margin: 20px 20px;
 			}
 
 	}
@@ -3898,6 +3918,11 @@ input, select, textarea {
 				padding: 4.5em 0;
 			}
 
+			.iconsection {
+				width: 60%;
+				height: 60%;
+				margin: 20px 20px;
+			}
 	}
 
 /* Small */
@@ -4213,6 +4238,12 @@ input, select, textarea {
 				padding: 3.25em 1.5em;
 			}
 
+			.iconsection {
+				width: 60%;
+				height: 60%;
+				margin: 20px 20px;
+			}
+
 	}
 
 /* XSmall */
@@ -4285,8 +4316,7 @@ input, select, textarea {
 				margin: 2rem;
 				width: 70%;
 			}
-
-	}
+	
 			#footer {
 				padding: 3em 1.25em;
 			}
@@ -4301,5 +4331,11 @@ input, select, textarea {
 						margin: 0;
 						padding: 0;
 					}
+
+		.iconsection {
+			width: 60%;
+			height: 60%;
+			margin: 20px 20px;
+		}
 
 	}
