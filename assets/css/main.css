@@ -655,7 +655,7 @@ input, select, textarea {
 
 /* Gallery styles */
 #custom-gallery {
-    padding: 40px 20px;
+    padding: 0px 20px 20px;
 }
 
 #gallery-row {
@@ -3766,7 +3766,7 @@ input, select, textarea {
 				margin: 20px 20px;
 			}
 
-
+			
 	}
 
 /* Large */
@@ -4261,6 +4261,17 @@ input, select, textarea {
 				margin: 20px 20px;
 			}
 
+
+			.gallery-item {
+				flex: 1 1 calc(50% - 20px); /* 2 columns layout */
+				background-color: #2b2c38;
+				border: 1px solid #CF9707; /* Accent color */
+				border-radius: px;
+				overflow: hidden;
+				transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+			}
+			
+
 	}
 
 /* XSmall */
@@ -4354,5 +4365,15 @@ input, select, textarea {
 			height: 60%;
 			margin: 20px 20px;
 		}
+
+		.gallery-item {
+			flex: 1 1 calc(100% - 20px); /* 1 columns layout */
+			background-color: #2b2c38;
+			border: 1px solid #CF9707; /* Accent color */
+			border-radius: px;
+			overflow: hidden;
+			transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		}
+		
 
 	}
