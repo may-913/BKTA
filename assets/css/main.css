@@ -4293,6 +4293,7 @@ input, select, textarea {
 				margin: 20px 20px;
 			}
 
+			/* small */
 
 			.gallery-item {
 				flex: 1 1 calc(50% - 20px); /* 2 columns layout */
