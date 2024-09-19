@@ -38,6 +38,29 @@
                         <h2>Gallery</h2>
                         <p>Explore our collection of images</p>
                     </header>
+
+					<div class="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item">
+								<video controls>
+									<source src="images/Gallerypics/girlserving.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+							<div class="carousel-item">
+								<video controls>
+									<source src="images/Gallerypics/girlserving.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+							<div class="carousel-item">
+								<video controls>
+									<source src="images/Gallerypics/girlserving.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+					</div>
     
                     <!-- Gallery -->
                     <section id="custom-gallery" class="gallery-box">
@@ -68,13 +91,8 @@
             </div>
 			<!-- Footer -->
 				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					<ul class="copyright">
+						<li>Owner: Barry King</li><li>kingtennisacademy@gmail.com</li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy;2024 Barry King Tennis Academy. All rights reserved.</li><li>Design: <a href="https://github.com/may-913">M.Barnhurst Github</a>&nbsp <a href="http://html5up.net">HTML5</a></li>
@@ -91,6 +109,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		
+			<!-- Carousel Script -->
+			<script>
+				let currentIndex = 0;
+				const items = document.querySelectorAll('.carousel-item');
+				const totalItems = items.length;
 
+				function updateCarousel() {
+					const offset = -currentIndex * 100; // Calculate the percentage shift
+					document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+				}
+
+				document.querySelector('.next').addEventListener('click', () => {
+					currentIndex = (currentIndex + 1) % totalItems; // Move to next
+					updateCarousel();
+				});
+
+				document.querySelector('.prev').addEventListener('click', () => {
+					currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Move to previous
+					updateCarousel();
+				});
+			</script>
     </body>
 </html>
