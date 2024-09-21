@@ -3729,7 +3729,7 @@ input, select, textarea {
 
 	#footer {
 		background: #272833;
-		padding: 6em 0;
+		padding: 2rem 0 3rem;
 		text-align: center;
 	}
 
@@ -3847,7 +3847,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 4.5em 0;
+				padding: 2rem 0 3rem;
 			}
 
 			.iconsection {
@@ -3947,7 +3947,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 4.5em 0;
+				padding: 2rem 0 3rem;
 			}
 
 			.iconsection {
