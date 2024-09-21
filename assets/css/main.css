@@ -686,22 +686,37 @@ input, select, textarea {
 
 
 /* Gallery styles */
-#custom-gallery {
-    padding: 0px 20px 20px;
+#gallery-row {
+    column-gap: 20px;
+    padding: 0 20px;
 }
 
-#gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+/* For larger screens: 3 columns */
+@media (min-width: 737px) {
+    #gallery-row {
+        column-count: 3;
+    }
+}
+
+/* For medium screens: 2 columns */
+@media (max-width: 736px) {
+    #gallery-row {
+        column-count: 2;
+    }
+}
+
+/* For small screens: 1 column */
+@media (max-width: 480px) {
+    #gallery-row {
+        column-count: 1;
+    }
 }
 
 .gallery-item {
-    flex: 1 1 calc(33.333% - 20px); /* 3 columns layout */
-    background-color: #2b2c38;
+    break-inside: avoid; /* Ensures items don't break across columns */
+    margin-bottom: 20px;
     border: 1px solid #CF9707; /* Accent color */
-    border-radius: px;
-    overflow: hidden;
+	/* border-radius: 8px; */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -714,8 +729,10 @@ input, select, textarea {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
+
+
 
 /* password styles */
 
@@ -4295,15 +4312,15 @@ input, select, textarea {
 
 			/* small */
 
-			.gallery-item {
-				flex: 1 1 calc(50% - 20px); /* 2 columns layout */
+			/* .gallery-item {
+				flex: 1 1 calc(50% - 20px);
 				background-color: #2b2c38;
-				border: 1px solid #CF9707; /* Accent color */
+				border: 1px solid #CF9707; 
 				border-radius: px;
 				overflow: hidden;
 				transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 			}
-			
+			 */
 
 	}
 
@@ -4399,14 +4416,14 @@ input, select, textarea {
 			margin: 20px 20px;
 		}
 
-		.gallery-item {
-			flex: 1 1 calc(100% - 20px); /* 1 columns layout */
+		/* .gallery-item {
+			flex: 1 1 calc(100% - 20px);
 			background-color: #2b2c38;
-			border: 1px solid #CF9707; /* Accent color */
+			border: 1px solid #CF9707;
 			border-radius: px;
 			overflow: hidden;
 			transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-		}
+		} */
 		
 
 	}
