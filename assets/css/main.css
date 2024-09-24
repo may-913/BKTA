@@ -267,17 +267,18 @@ input, select, textarea {
 
 
 	.carousel-item {
-		min-width: 100%;
+		/* min-width: 100%; */
+		height: 164px;
 		box-sizing: border-box;
 		display: flex;
-		justify-content: center;
+		justify-content: left;
 		align-items: center;
 		padding: 0px 20px 0px 0px ;
 	}
 
 	.carousel video {
-		max-width: 100%;
-		height: auto;
+		/* max-width: 100%; */
+		height: 164px;
 		border: 1px solid #CF9707;
 	}
 
@@ -694,21 +695,21 @@ input, select, textarea {
 /* For larger screens: 3 columns */
 @media (min-width: 737px) {
     #gallery-row {
-        column-count: 3;
+        column-count: 4;
     }
 }
 
 /* For medium screens: 2 columns */
 @media (max-width: 736px) {
     #gallery-row {
-        column-count: 2;
+        column-count: 3;
     }
 }
 
 /* For small screens: 1 column */
 @media (max-width: 480px) {
     #gallery-row {
-        column-count: 1;
+        column-count: 2;
     }
 }
 
