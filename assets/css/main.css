@@ -4026,6 +4026,19 @@ input, select, textarea {
 				font-size: 1em;
 			}
 
+			p {
+				text-align: left;
+				/* text-indent: 1.5rem;  */
+			}
+			
+			section > p {
+				text-align: center;
+			}
+
+			header > p {
+				text-align: center;
+			}
+
 		/* Section/Article */
 
 			header p br {
