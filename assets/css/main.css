@@ -797,6 +797,24 @@ input, select, textarea {
 	margin: 0 10rem;
 }
 
+
+#workout-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#workout-left,
+#workout-right {
+    width: 48%; /* Adjust column width to fit */
+}
+
+#workout-left ul,
+#workout-right ul {
+    margin-left: 20px; /* Optional: better spacing for lists */
+}
+
+
 /* Container */
 
 	.container {
@@ -3034,6 +3052,8 @@ input, select, textarea {
 	body.landing {
 		background-color: #fff;
 	}
+
+	
 }
 
 
