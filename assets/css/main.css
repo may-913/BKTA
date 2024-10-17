@@ -3689,12 +3689,20 @@ input, select, textarea {
 
 /* Banner */
 
+
+	#home-logo {
+		max-width: 60%;             /* Set maximum width */
+		height: auto;               /* Maintain aspect ratio */
+		margin: 0 auto;             /* Center image in flexbox */
+	}
+	
+
+
 	#banner {
 		background-attachment: fixed;
 		background-color: #131318;
-		background-image: url("images/ballbg.jpg");
+		background-image: url("images/ballbg-transparent.png");
 		background-position: center center;
-		background-blend-mode: darken;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		min-height: 100vh;
@@ -3732,7 +3740,7 @@ input, select, textarea {
 			max-width: 95%;
 			padding: 6em;
 			position: relative;
-			text-align: right;
+			/* s */
 			vertical-align: middle;
 			z-index: 1;
 		}
@@ -4167,8 +4175,8 @@ input, select, textarea {
 			}
 
 				#titleBar .title {
-					color: #ffffff;
-					display: block;
+					color: #ff0000;
+					display: none:
 					font-weight: 450;
 					height: 44px;
 					line-height: 44px;
