@@ -3637,6 +3637,13 @@ input, select, textarea {
 		width: auto; /* Keep the aspect ratio */
 		display: block; /* Ensures no extra space around the image */
 	}
+
+	#logo-home {
+		height: 5rem; /* rAdjust the logo size */
+		width: auto; /* Keep the aspect ratio */
+		display: block; /* Ensures no extra space around the image */
+		opacity: 0;
+	}
 	
 	#header nav {
 		display: flex; /* Keeps nav items in line */
