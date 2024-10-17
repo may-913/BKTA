@@ -3692,8 +3692,9 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #131318;
-		/* background-image: url("../../images/court.jpg"); */
+		background-image: url("images/ballbg.jpg");
 		background-position: center center;
+		background-blend-mode: darken;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		min-height: 100vh;
@@ -3708,6 +3709,7 @@ input, select, textarea {
 			height: 100vh;
 			vertical-align: middle;
 			width: 1%;
+			opacity: 0.02;
 		}
 
 		#banner:after {
