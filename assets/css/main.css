@@ -4175,12 +4175,13 @@ input, select, textarea {
 			}
 
 				#titleBar .title {
-					color: #ff0000;
-					display: none:
+					display: none !important; 
+					/* color: #ffffff;
+					display: block;
 					font-weight: 450;
 					height: 44px;
 					line-height: 44px;
-					text-align: center;
+					text-align: center; */
 				}
 
 					#titleBar .title a {
