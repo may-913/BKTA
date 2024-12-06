@@ -685,6 +685,20 @@ input, select, textarea {
 	border: 1px solid #AD8B30;
 }
 
+/* workout vids */
+	
+#servevid {
+	display: flex;
+	flex-direction: column; /* Arrange videos vertically */
+	align-content: flex-start;
+	justify-content: 
+  	gap: 1rem; /* Add spacing between videos */
+}
+
+#servevid video {
+  	width: 400px; /* Set a smaller width */
+  	height: auto; /* Maintain aspect ratio */
+}
 
 /* Gallery styles */
 #gallery-row {
@@ -789,31 +803,41 @@ input, select, textarea {
 	background-color: #80641C; /* Hover state */
 }
 
+/* workout grid */
+.workout-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Two equal columns */
+	gap: 20px; /* Adjust spacing between columns */
+	zoom: 0.9;
+}
+
+.text-column {
+	padding: 10px;
+}
+
+.video-column {
+	padding: 10px;
+}
+
+.video-column video {
+	width: 100%; /* Make videos responsive */
+	margin-bottom: 10px; /* Space between videos */
+}
+
+@media screen and (max-width: 768px) {
+	.workout-grid {
+	  grid-template-columns: 1fr; /* Single column on smaller screens */
+	}
+}
+
 
 
 /* workout text */
 
-#workout {
+/* #workout {
 	margin: 0 10rem;
-}
 } */
 
-
-#workout-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#workout-left,
-#workout-right {
-    width: 48%; /* Adjust column width to fit */
-}
-
-#workout-left ul,
-#workout-right ul {
-    margin-left: 20px; /* Optional: better spacing for lists */
-}
 
 
 /* Container */
@@ -3692,7 +3716,7 @@ input, select, textarea {
 
 
 	#home-logo {
-		max-width: 60%;             /* Set maximum width */
+		max-width: 50%;             /* Set maximum width */
 		height: auto;               /* Maintain aspect ratio */
 		margin: 0 auto;             /* Center image in flexbox */
 	}
@@ -4447,7 +4471,8 @@ input, select, textarea {
 				margin: 2rem;
 				width: 70%;
 			}
-	
+
+
 			#footer {
 				padding: 3em 1.25em;
 			}

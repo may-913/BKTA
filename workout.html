@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>BKTA Workout</title>
+		<title>BKTA Workout TEST</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,35 +17,35 @@
 	</head>
 
 	<!-- password script -->
-	<script>
-		// Display the modal on page load
+	<!-- <script>
+		
 		window.onload = function() {
 			document.getElementById('passwordModal').style.display = 'flex';
 		};
 	
-		// Function to check the entered password
+		
 		function checkPassword() {
-			const password = 'KTA'; // Set your desired password here
+			const password = 'KTA';
 			const userInput = document.getElementById('passwordInput').value;
 	
 			if (userInput === password) {
-				document.getElementById('passwordModal').style.display = 'none'; // Hide modal if password is correct
+				document.getElementById('passwordModal').style.display = 'none'; 
 			} else {
-				document.getElementById('error-message').style.display = 'block'; // Show error message if incorrect
+				document.getElementById('error-message').style.display = 'block';
 			}
 		}
-	</script>
+	</script> -->
 
 	<body class="is-preload landing">
 		<!-- Password Modal -->
-		<div id="passwordModal" class="modal">
+		<!-- <div id="passwordModal" class="modal">
 			<div class="modal-content">
 				<h3>Enter Key to Access</h3>
 				<input type="password" id="passwordInput" placeholder="Enter key" />
 				<button onclick="checkPassword()">Submit</button>
 				<p id="error-message" style="color: rgb(255, 119, 119); display: none;">Incorrect key. Try again.</p>
 			</div>
-		</div>
+		</div> -->
 
 
 		<div id="page-wrapper">
@@ -64,24 +64,26 @@
 				</header>
 
 			<!-- Main -->
-				<div id="main" class="wrapper style1">
-					<div class="container">
-						<header class="major">
-							<h2>Barry's Off Court Workout</h2>
-							<p>For students of BKTA only</p>
-						</header>
-
-
-						<!-- Content -->
-						<section id="workout">
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<header class="major">
+						<h2>Barry's Off Court Workouts & Tutorials</h2>
+						<p>For students of BKTA only</p>
+					</header>
+			
+				<!-- Two-column grid -->
+					<div class="workout-grid">
+						<!-- Left Column: Text Content -->
+						<div class="text-column">
+							<section id="workout">
 							<h3>Daily Journal:</h3>
 							<p>Log in workouts, ball machine workouts, practice matches, and lessons! Should take about 3-5 minutes.</p>
-
-							<h3>Workout Stations: 3 times each</h3>
-
+				
+							<h3>Workout Stations: <br>3 times each</h3>
+				
 							<h4>Jump Rope:</h4>
 							<p>10-15 minutes each day done by itself. If you do it during the workout, 3-5 minutes each station.</p>
-
+			
 							<h4>Crunches:</h4>
 							<ul>
 								<li>Regular crunches (25)</li>
@@ -89,7 +91,7 @@
 								<li>Feet up crunches (25)</li>
 								<li>Bicycle crunches (25)</li>
 							</ul>
-
+				
 							<h4>Ladder Drills (down and back):</h4>
 							<ul>
 								<li>Quick run</li>
@@ -101,29 +103,50 @@
 								<li>Hopscotch</li>
 								<li>Around the world</li>
 							</ul>
-
+				
 							<h4>Medicine Ball:</h4>
 							<ul>
 								<li>Forehand coil and uncoil, straight arms (5)</li>
 								<li>Backhand coil and uncoil, straight arms (5)</li>
 								<li>Side to side (10)</li>
 							</ul>
-
+				
 							<p>Swing shapes done at the end. With footwork, jab steps, and crossover recovery steps if possible. Visualize making every shot. Pay attention to perfect form and technique, also the height of the ball on contact. Perfect split step every time, please.</p>
-
+				
 							<h4>Serve Practice:</h4>
 							<p>Whenever possible. Routine must include visualization.</p>
-
+				
 							<h4>Hand Grippers and Forearm Curls:</h4>
 							<p>Until fatigue. 3 reps.</p>
+							<section>
+								<ul class="actions">
+									<li><a class="button" id="download">Download</a></li>
+								</ul>
+							</section>
 						</section>
-						<section>
-							<ul class="actions">
-								<li><a class="button" id="download">Download</a></li>
-							</ul>
-						</section>
+						</div>
+			
+					<!-- Right Column: Videos -->
+						<div class="video-column">
+							<h3>Serving Demos</h3>
+							<section id="servevid">
+							<video controls autoplay muted>
+								<source src="images/workoutpics/one-foot.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<video controls muted>
+								<source src="images/workoutpics/crossed-legs.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<video controls muted>
+								<source src="images/workoutpics/normal-stance.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							</section>
+						</div>
 					</div>
 				</div>
+			</div>
 
 			<!-- Footer -->
 				<footer id="footer">
